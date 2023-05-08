@@ -1,0 +1,43 @@
+* {
+    padding: 10px;
+    margin: 20px;
+    background-color: blanchedalmond;
+  }
+  
+  body {
+    font-family: verdana, sans-serif;
+    color: rgb(80, 3, 3);
+  }
+  
+  h1 {
+    color: rgb(8, 0, 85);
+    font-family: Verdana;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  ul li {
+    list-style: none;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(75, 75, 75);
+  }
+  
+  ul li:hover {
+    background-color: rgb(255, 255, 161);
+  }
+  
+  ul .element[data-completed="true"]:focus::before {
+    content: "👉";
+    background-color: rgb(196, 255, 255);
+    color: rgb(212, 212, 212);
+  }
+  
+  ul .element[data-completed="true"]:focus {
+    background-color: lightcyan;
+    color: rgb(255, 0, 0);
+    text-decoration: line-through;
+    text-transform: uppercase;
+  }
